@@ -1,4 +1,5 @@
 import React from 'react'
+import { HeaderMenuItem } from './HeaderMenuItem'
 
 export const Header = () => {
   return (
@@ -10,12 +11,11 @@ export const Header = () => {
     </div>
     <nav>
         <ul className="navmenu">
-            <li><a className="headeranchor" href="#">Home</a></li>
-            <li><a className="headeranchor" href="#">Services</a></li>
-            <li><a className="headeranchor" href="#">Products</a></li>
-            <li><a className="headeranchor" href="#about">About</a></li>
-            <li><a className="headeranchor" href="#">Contact</a></li>
-            <li><a className="headeranchor" href="#">Country</a></li>
+            <HeaderMenuItem menuText="Home"  />
+            <HeaderMenuItem menuText="Services" />
+            <HeaderMenuItem menuText="Products" />
+            <HeaderMenuItem menuText="About"/>
+            <HeaderMenuItem menuText="Contact" />
         </ul>
 
         
