@@ -1,9 +1,9 @@
 import React from 'react'
 import { HeaderMenuItem } from './HeaderMenuItem'
 
-export const Header = () => {
+export const Header = ({ currentPage }) => {
   return (
-
+    
     <header className="siteheader">
     <div className="logo">
         <i className='bx bxs-cat logoicon'></i>
@@ -11,11 +11,11 @@ export const Header = () => {
     </div>
     <nav>
         <ul className="navmenu">
-            <HeaderMenuItem menuText="Home"  />
-            <HeaderMenuItem menuText="Services" />
-            <HeaderMenuItem menuText="Products" />
-            <HeaderMenuItem menuText="About"/>
-            <HeaderMenuItem menuText="Contact" />
+            <HeaderMenuItem currentPage={currentPage} menuText="Home"  />
+            <HeaderMenuItem currentPage={currentPage} menuText="Services" />
+            <HeaderMenuItem currentPage={currentPage} menuText="Products" />
+            <HeaderMenuItem currentPage={currentPage} menuText="About"/>
+            <HeaderMenuItem currentPage={currentPage} menuText="Contact" />
         </ul>
 
         

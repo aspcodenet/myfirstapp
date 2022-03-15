@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const Main = () => {
+export const Main = (props) => {
   return (
     <div>
-            Hej hej <i>Hopp</i> test123
+            Current page is { props.currentPage }
     </div>
   )
 }
