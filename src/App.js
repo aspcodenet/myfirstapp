@@ -8,9 +8,15 @@ function App() {
 
   const [activePage, setActivePage] = useState('Home');
 
+  const changeActivePage = (newPage) =>{
+    setActivePage(newPage)
+  }
+
   return (
     <div>
-      <Header currentPage={activePage} />
+      {/* <button onClick={()=>setActivePage('Contact')}>Contact</button>
+      <button onClick={()=>setActivePage('Home')}>Home</button> */}
+      <Header currentPage={activePage} onChangeActivePage={changeActivePage}   />
       <div>Tjena</div>
       <Main currentPage={activePage}/>
       <Footer/>
