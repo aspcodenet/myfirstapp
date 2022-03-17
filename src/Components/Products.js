@@ -1,8 +1,22 @@
 import React from 'react'
 import { Product } from './Product'
 import { products } from './Data/ProductData'
+import {fetchProducts} from './Data/ProductData'
+import { useState,useEffect } from 'react'
 
 export const Products = () => {
+
+   const [products, setProducts] = useState([]);    
+
+
+
+   useEffect(() =>{
+    const fetchData = async()=>{
+      const result = await fetchProducts()
+      setProducts(result)
+    }
+    fetchData()
+  }, [])   
 
   return (
 
