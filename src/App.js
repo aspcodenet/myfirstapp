@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div>
-      {/* <button onClick={()=>setActivePage('Contact')}>Contact</button> stefan
+      {/* <button onClick={()=>setActivePage('Contact')}>Contact</button> stefan 
       <button onClick={()=>setActivePage('Home')}>Home</button> */}
       <Header currentPage={activePage} onChangeActivePage={changeActivePage}   />
       <Main currentPage={activePage}/>
